@@ -168,7 +168,7 @@
     typed_strings = typed_strings.split(',')
     new Typed('.typed', {
       strings: typed_strings,
-      loop: true,
+      loop: false,//true,
       typeSpeed: 100,
       backSpeed: 50,
       backDelay: 2000
