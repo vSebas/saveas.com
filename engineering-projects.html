@@ -367,6 +367,76 @@
       </div>
     </section>
     
+    
+    <section id="collision-avoid-vo" class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-info">
+
+          <h3>Collision Avoidance for a Boat</h3>
+          <ul>
+            <li><strong>Project date</strong>: February - April 2020</li>
+          </ul>
+
+          
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/boat/Heuristic.png" alt="">
+                </div>
+                
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/boat/Intersections.png" alt="">
+                </div>
+                
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/boat/RAV.png" alt="">
+                </div>
+                
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/boat/Va_and_cc.png" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+
+            <div class="portfolio-description">
+              <!-- <h2>This is an example of portfolio detail</h2> -->
+
+              <p>
+                Developed collision avoidance method for a boat based on Velocity Obstacles in simulations with RViz 
+                and ROS for RoboBoat 2021.  The Velocity Obstacle method considers an agent's current velocity and heading 
+                and calculates a set of velocities that the agent can safely choose to avoid collisions with nearby obstacles. 
+                This set of safe velocities is represented as a geometric shape known as the "Velocity Obstacle." The Velocity 
+                Obstacle is defined in the agent's velocity space, and it encodes the possible velocities that would result in 
+                a collision with obstacles if chosen by the agent. By avoiding velocities inside the Velocity Obstacle, the agent 
+                can guarantee collision avoidance. The Computational Geometry Algorithms Library (CGAL) was used to create 
+                geometric representations and operations of polygons used in this method, which was also useful for visualization 
+                in Rviz. 
+              </p>
+
+              <p>More info in <a href="assets/img/portfolio/Velocity_Obstacle.pdf">this</a> report</p>
+
+            </div>
+
+          </div>
+
+          <iframe height="500"
+          src="https://www.youtube.com/embed/4XLjYTDFoD0 ">
+          </iframe> 
+
+        </div>
+
+      </div>
+    </section>
     <!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->
