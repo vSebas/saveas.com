@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Sebas Mtz</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- spirals -->
+  <link href="assets/img/spiral.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">vSebas</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html#publications">Publications</a></li>
+          <li><a class="nav-link scrollto" href="index.html#rs-projects">Research Projects</a></li>
+          <li><a class="nav-link scrollto " href="index.html#av-projects">Engineering Projects</a></li>
+          <li><a class="nav-link scrollto " href="#av-projects">News</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <div class="hero hero-single route bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h2 class="hero-title mb-4">Research Projects</h2>
+          <ol class="breadcrumb d-flex justify-content-center">
+            <li class="breadcrumb-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active">Research Projects</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+
+    <section id="robust-control" class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-info">
+
+          <h3>Robust Control for Unmanned Underwater Vehicles (UUVs)</h3>
+          <ul>
+            <li><strong>Project date</strong>: February 2020 - July 2022</li>
+          </ul>
+
+        <div class="row gy-4">
+
+          <div class="portfolio-description">
+            
+            <h5> Custom UUV design </h5>
+            <p>
+              Designed a custom 6-thruster configuration for a 6-DOF Unmanned Underwater Vehicle (UUV), shown in the next figure,
+               that provides fully-actuation with no excessive number of thrusters and prioritizing longitudinal motion, yet, enabling lateral movement in a lesser degree.
+            </p>
+            
+            <div class="col">
+              <figure>
+                <center>
+                  <img src="assets/img/portfolio/uuv.png" alt="car_model" style="width:40%">
+                  <figcaption>VTec U-IV</figcaption>
+                </center>
+              </figure>
+            </div>
+
+            <p>
+              After defining the vehicle thruster configuration and estimated weight and fluotation properties, the vehicle dynamics
+              were characterized using CAD tools, specifically solidworks flow simulations to obtain drag and added mass coefficients.
+              With the identified parameters, the model was initially simulated in Simulink.
+            </p>
+
+            <h5> Robust Control design </h5>
+
+            <p>
+                Designed 6-DOF sliding-mode-based controllers for an UUV. These controllers provide robustness against 
+                unmodeled system dynamics, insensitivity to parameter variations and external disturbance 
+                rejection. These control laws were used in turn as auxiliary controllers to develop model-based feedback 
+                linearization controllers for the UUV.
+              </p>
+
+              <p>
+                Implemented a second order ASMC and ANTSMC for an UUV and aided in the development of a first order AITSMC as research topics.
+              </p>
+            
+              <div class="row">
+                <div class="col">
+                  <center>
+                    <iframe width="800" height="500" src="https://www.youtube.com/embed/fogNmTDVbWc" > </iframe>
+                  </center>
+                </div>
+              </div>
+          </div>
+
+          <h5> Controller Library </h5>
+          <p>
+            In order to test the designed controllers, a <a href="https://github.com/vanttec/vanttec_controllers">C++ controller library</a> was developed, intended for use in various vehicles.
+            This library offers PID and SMC-based control laws, which can be used independently or as supplementary control signals 
+            for feedback linearization controllers. It also includes base class definitions for marine and car-like vehicles, used to
+             create specific controllers for real-world vehicles. Also, the library provides definitions for Line-Of-Sight and Stanley
+              controllers, employed as guidance laws. This library has undergone real-world testing in a car and in simulations for a 
+              boat and submarine.
+          </p>
+          
+        </div>
+
+
+      </div>
+    </section>
+    
+    <section id="trajectory-generation" class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-info">
+
+          <h3>Trajectory Generation for an UUV</h3>
+          <ul>
+            <li><strong>Project date</strong>: September 2022 - April 2023</li>
+          </ul>
+
+        <div class="row gy-4">
+
+          <div class="portfolio-description">
+            
+            <h5> Trajectory Generation based on S-Curves </h5>
+            <p>
+              Developed a simple <a href="https://github.com/vanttec/vanttec_motion_planners">C++ motion planning library </a> with RRT* sample-based planner (from OMPL) used for 
+              trajectory generation based on sigmoid-curve jerk profiles to obtain smooth references for an UUV 
+              (tested in simulations) on 2D maps.
+            </p>
+
+            <p>You can read more in <a href="assets/img/portfolio/traj_gen.pdf">this</a> report</p>
+  
+
+              <div class="row">
+                <div class="col">
+                  <center>
+                    <iframe width="800" height="500" src="https://www.youtube.com/embed/t1Dch5_S1LQ" > </iframe>
+                  </center>
+                </div>
+              </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    
+    <!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <!-- <footer>
+  </footer> -->
+  <!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
