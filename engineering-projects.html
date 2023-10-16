@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Sebas Mtz</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- spirals -->
+  <link href="assets/img/spiral.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">vSebas</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html#publications">Publications</a></li>
+          <li><a class="nav-link scrollto" href="index.html#rs-projects">Research Projects</a></li>
+          <li><a class="nav-link scrollto " href="index.html#av-projects">Engineering Projects</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <div class="hero hero-single route bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h2 class="hero-title mb-4">Engineering Projects</h2>
+          <ol class="breadcrumb d-flex justify-content-center">
+            <li class="breadcrumb-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active">Engineering Projects</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    
+    <section id="car-stepper-boards" class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-info">
+
+          <h3>Steering and Braking System for Autonomous Golf Cart</h3>
+          <ul>
+            <li><strong>Project date</strong>: January - July 2023</li>
+          </ul>
+
+          
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/embedded/steppers_v2.jpeg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <!-- <img src="assets/img/portfolio/embedded/throttle_v2.jpeg" alt=""> -->
+                  <img src="assets/img/portfolio/embedded/steppers_v1.jpeg" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="portfolio-description">
+              <!-- <h2>This is an example of portfolio detail</h2> -->
+
+              <p>
+                Designed steering and braking control boards for an electric golf cart shuttle based on STM32L431RC 
+                microcontrollers in KiCAD. A single board can be used for both steering and braking tasks, or separately.
+              </p>
+
+              <p>
+                Each module seamlessly incorporates a MAX33040EAKA+T CAN transceiver, facilitating effective communication 
+                with other nodes. Furthermore, the board features connectors for two stepper drivers, enabling precise control 
+                over the steering wheel, brake pedal, or both. Additionally, the board interfaces with two CAN encoders 
+                (IFM RM8004 and Briter BRT38) to accurately measure pedal and steering wheel angles.
+              </p>
+
+              <p>
+                The modules are thoughtfully designed so that a single CAT-6 cable can efficiently connect the board to the 
+                CAN-bus while simultaneously powering its systems.
+              </p>
+              
+              <p>
+                In terms of software, FreeRTOS tasks were programmed to manage stepper motor control and CAN communication. 
+                Libraries were created for CAN frame parsing to decode signals from the steering wheel or pedal brake encoders, 
+                enabling facilitating actuation of the steering and braking steppers.
+                This control system can be operated either via an Xbox controller or by specifying desired angle inputs.
+              </p>
+
+            </div>
+
+          </div>
+
+          <iframe height="500"
+          src="https://www.youtube.com/embed/9n_MTxXkav8">
+          </iframe> 
+
+        </div>
+
+      </div>
+    </section>
+    
+    
+    <section id="car-modeling-control" class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-info">
+
+          <h3>Car Mathematical Modeling, Characterization and Control Design</h3>
+          <ul>
+            <li><strong>Project date</strong>: December 2022 - August 2023</li>
+          </ul>
+
+        <div class="row gy-4">
+
+          <div class="portfolio-description">
+            
+            <h5>Vehicle Mathematical Modeling and Characterization</h5>
+              <p>
+                Research-oriented development and characterization of vehicle dynamics based on a bicycle model for the car.
+                Conducted experiments in a parking lot to determine the rolling resistance and the propulsion forces of 
+                the car induced by a 255-step digital potentiometer embedded in a PCB module connected to the vehicle motor 
+                controller. A VectorNav VN-300 was employed to measure vehicle speed and acceleration profiles against different 
+                step inputs on straight-line tests. Initial validation was done in simulations, with Rviz.
+              </p>
+
+              <p>
+                (Video descriptions hold more info on each implementation)
+              </p>
+            
+            <div class="row">
+              <div class="col">
+                <center>
+                  <iframe width="400" height="500" src="https://www.youtube.com/embed/UYWb2ofrkkU" > </iframe>
+                </center>
+              </div>
+
+              <div class="col">
+                <figure>
+                  <img src="assets/img/portfolio/car_dynamics.PNG" alt="car_model" style="width:80%">
+                  <figcaption>Bicycle Car Model</figcaption>
+                </figure>
+              </div>
+              <!-- oElMwaBBpHc  -->
+            </div>
+            
+            <br>
+            <h5>Car Control Design</h5>
+              <p>
+                Implemented lateral and longitudinal control schemes in real life for the golf-cart shuttle. 
+                The lateral control employs the Stanley guidance law, while longitudinal (velocity) control utilizes PID,
+                ASMC, or AITSMC designed controllers. These controllers were initially developed in ROS2 simulations and later 
+                fine-tuned in real-world scenarios. Used custom-built controller library.
+                Model characterization and controllers’ design required fast implementation and were completed during August
+                 2023 in a span of four weeks.
+              </p>
+            
+              <p>
+                (Video descriptions hold more info on each implementation)
+              </p>
+            
+            <div class="row">
+              <div class="col">
+                <center>
+                  <iframe width="800" height="500" src="https://www.youtube.com/embed/oElMwaBBpHc" > </iframe>
+                </center>
+              </div>
+
+              <div class="col">
+                <center>
+                  <iframe width="400" height="500" src="https://www.youtube.com/embed/iTN3gMjrGjw " > </iframe>
+                </center>
+              </div>
+            </div>
+            
+            <br>
+            <h5>Navigation</h5>
+              <p>
+                performed waypoint navigation in a parking lot based on NED-reference frame goal positions obtained from 
+                VectorNav VN-300 GPS measurements and started integration with an AMCL-based localization system for in-Campus
+                 navigation.
+              </p>
+            
+              <p>
+                (Video descriptions hold more info on each implementation)
+              </p>
+            
+            <div class="row">
+              <div class="col">
+                <center>
+                  <iframe width="600" height="500" src="https://www.youtube.com/embed/n97e0pJHhVk " > </iframe>
+                </center>
+              </div>
+
+              <div class="col">
+                <center>
+                  <iframe width="600" height="500" src="https://www.youtube.com/embed/C9cc973AtAo" > </iframe>
+                </center>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+
+
+      </div>
+    </section>
+    
+    <!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <!-- <footer>
+  </footer> -->
+  <!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
