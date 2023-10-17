@@ -367,7 +367,6 @@
       </div>
     </section>
     
-    
     <section id="collision-avoid-vo" class="portfolio-details">
       <div class="container">
 
@@ -437,6 +436,98 @@
 
       </div>
     </section>
+    
+    <section id="boat-perception" class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-info">
+
+          <h3>3D Object Position Estimation using LiDAR + ZED for a Boat</h3>
+          <ul>
+            <li><strong>Project date</strong>: February 2022 - April 2022</li>
+          </ul>
+
+          
+        <div class="row gy-4">
+
+          <div class="portfolio-description">
+            <!-- <h2>This is an example of portfolio detail</h2> -->
+
+            <p>
+              Employed a previously developed buoy detection method based on the Velodyne VLP-16 LiDAR. 
+              This method classifies buoys based on their physical dimensions (width, height, and depth), but it 
+              often failed in real-life scenarios due to noise. Since it relied on physical shapes, any object with 
+              similar dimensions to a buoy would be misclassified as one. To enhance accuracy, a 3D object detection
+               using the ZED camera and YoloV3 was developed. A pre-trained YoloV3 object detection network was used 
+               through a ROS package with GPU support. This package provided distance estimation using the ZED's depth map, 
+               and trigonometric calculations were applied to estimate the 3D position of each detected object. To validate 
+               the presence of objects detected by the LiDAR method, the Yolo-ZED detection was utilized for verification.
+                Although results were obtained, they were not entirely satisfactory.
+            </p>
+
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <center>
+                <iframe width="550" height="500" src="https://www.youtube.com/embed/HkOBoNi8ELM " > </iframe>
+              </center>
+            </div>
+
+            <div class="col">
+              <center>
+                <iframe width="550" height="500" src="https://www.youtube.com/embed/0XFLuOw3VHw" > </iframe>
+              </center>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    
+    <section id="simulations" class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-info">
+
+          <h3>Simulation Environment for RoboSub and RoboBoat competitions</h3>
+          <ul>
+            <li><strong>Project date</strong>: December 2019 - February 2020</li>
+          </ul>
+
+          
+        <div class="row gy-4">
+
+          <div class="portfolio-description">
+            <!-- <h2>This is an example of portfolio detail</h2> -->
+
+            <p>
+              Developed Gazebo simulator environment for online RoboNation competitions during the pandemic, 
+              serving to validate challenge solutions and ease future development when physical testing isn't feasible. 
+              The simulator utilizes dynamic models for USV (used in real life to design controllers) and UUV to simulate 
+              their state (pose and velocity), features 3D models for both vehicles, includes a simulated sensor suite 
+              (LiDAR and stereo camera for the boat, two cameras for the submarine), provides a basic lake scenario, and 
+              incorporates custom props for each competition.
+            </p>
+
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <center>
+                <iframe width="550" height="500" src="https://www.youtube.com/embed/0yAtx4t2V6w " > </iframe>
+              </center>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    
     <!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->
